@@ -1,0 +1,49 @@
+*{
+    color: green;
+}
+
+div * {
+    background-color: yellow;
+}
+
+a {
+    color: red;
+}
+
+h1, h2, p {
+    text-align: right;
+    color: blue;
+}
+
+.red {
+    color: #f33;
+}
+
+.yellow-bg{
+    background: #ffa;
+}
+
+#identified {
+    background-color: skyblue;
+}
+
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+input[type="button"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+}
+
+div p {
+    background-color: yellow;
+}
+
+div.row > p{
+    background-color: plum;
+}

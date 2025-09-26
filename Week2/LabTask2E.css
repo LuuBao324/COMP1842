@@ -59,8 +59,13 @@ body{
 }
 
 .htmlDef {
-    color: red;
+    color: #b22222;
     background-color: antiquewhite;
+    padding: 5px 7px;
+    border-left: 8px solid #ff8c00;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .contactForm p{

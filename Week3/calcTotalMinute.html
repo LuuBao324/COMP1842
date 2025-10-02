@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Enter hour: <input type="text" name="" id="hour" ></p>
+    <p> Enter minute: <input type="text" name="" id="minute"></p>
+    <input type="button" onclick="doCalc()" value="Calculate toal minute">
+    <p id="timeCalc"></p>
+
+    <script>
+        function calcTotalMinute(h, m){
+            let totalMinute = h * 60 + m;
+            return totalMinute;
+        }
+
+        function doCalc(){
+            
+            let newHour = parseInt(document.getElementById("hour").value);
+            let newMinute = parseInt(document.getElementById("minute").value);
+            let totalMin = calcTotalMinute(newHour, newMinute);
+            document.getElementById("timeCalc").innerHTML += "The total minutes of "+ newHour + " hours and " + newMinute + " minutes is " + totalMin
+        }
+    </script>
+</body>
+</html>

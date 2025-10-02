@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Enter first number: <input type="text" name="" id="num1"></p>
+    <p> Enter second number: <input type="text" name="" id="num2"></p>
+    <input type="button" onclick="doCalc()" value="Calculate Average">
+    <p id="averageCalc"></p>
+
+    <script>
+        function calcAverage(num1, num2){
+            let average = (num1 + num2) / 2;
+            return average;
+        }
+
+        function doCalc(){
+            let newFirstNumber = document.getElementById("num1").value;
+            let newSecondNumber = document.getElementById("num2").value;
+            let newAverage = calcAverage(newFirstNumber, newSecondNumber);
+            document.getElementById("averageCalc").innerHTML += "the Average of  " + newWidth + " and " + newHeight + " is " + newAverage;
+        }
+    </script>
+</body>
+</html>

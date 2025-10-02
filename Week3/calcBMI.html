@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Enter width: <input type="text" name="" id="weight" ></p>
+    <p> Enter height: <input type="text" name="" id="height" placeholder="enter in metre"></p>
+    <input type="button" onclick="doCalc()" value="Calculate BMI">
+    <p id="bmiCalc"></p>
+
+    <script>
+        function calcRectangleArea(aWeight, aHeight){
+            let BMI = aWeight / (aHeight * aHeight);
+            return BMI;
+        }
+
+        function doCalc(){
+            let newWeight = document.getElementById("weight").value;
+            let newHeight = document.getElementById("height").value;
+            let newBMI = calcRectangleArea(newWidth, newHeight);
+            document.getElementById("bmiCalc").innerHTML += "Your BMI with height of " + newHeight + " and weight of " + newWeight + " is " + newBMI;
+        }
+    </script>
+</body>
+</html>

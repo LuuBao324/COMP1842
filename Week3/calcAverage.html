@@ -18,10 +18,10 @@
         }
 
         function doCalc(){
-            let newFirstNumber = document.getElementById("num1").value;
-            let newSecondNumber = document.getElementById("num2").value;
+            let newFirstNumber = parseInt(document.getElementById("num1").value);
+            let newSecondNumber = parseInt(document.getElementById("num2").value);
             let newAverage = calcAverage(newFirstNumber, newSecondNumber);
-            document.getElementById("averageCalc").innerHTML += "the Average of  " + newWidth + " and " + newHeight + " is " + newAverage;
+            document.getElementById("averageCalc").innerHTML += "the Average of  " + newFirstNumber + " and " + newSecondNumber + " is " + newAverage;
         }
     </script>
 </body>

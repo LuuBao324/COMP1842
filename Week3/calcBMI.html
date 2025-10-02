@@ -12,15 +12,15 @@
     <p id="bmiCalc"></p>
 
     <script>
-        function calcRectangleArea(aWeight, aHeight){
+        function calcBMI(aWeight, aHeight){
             let BMI = aWeight / (aHeight * aHeight);
             return BMI;
         }
 
         function doCalc(){
-            let newWeight = document.getElementById("weight").value;
-            let newHeight = document.getElementById("height").value;
-            let newBMI = calcRectangleArea(newWidth, newHeight);
+            let newWeight = parseInt(document.getElementById("weight").value);
+            let newHeight = parseInt(document.getElementById("height").value);
+            let newBMI = calcBMI(newWeight, newHeight);
             document.getElementById("bmiCalc").innerHTML += "Your BMI with height of " + newHeight + " and weight of " + newWeight + " is " + newBMI;
         }
     </script>

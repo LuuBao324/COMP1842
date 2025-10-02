@@ -18,8 +18,8 @@
         }
 
         function doCalc(){
-            let newWidth = document.getElementById("width").value;
-            let newHeight = document.getElementById("height").value;
+            let newWidth = parseInt(document.getElementById("width").value);
+            let newHeight = parseInt(document.getElementById("height").value);
             let newPerimeter = calcRectanglePerimeter(newWidth, newHeight);
             document.getElementById("perimeterCalc").innerHTML += "the perimeter of the rectangle " + newWidth + " by " + newHeight + " is " + newPerimeter;
         }
